@@ -22,12 +22,12 @@ export default function ResultPage({ params }) {
   }, [makeId, year]);
 
   if (loading) {
-    return <div className="container mx-auto p-4 text-white">Загрузка...</div>;
+    return <div className="container mx-auto p-4 text-white">Loading...</div>;
   }
 
   return (
     <div className="container mx-auto p-4 bg-gray-900 text-white">
-      <h1 className="text-3xl font-bold mb-4">Модели автомобилей</h1>
+      <h1 className="text-3xl font-bold mb-4">Marks auto</h1>
       <ul>
         {models.map((model) => (
           <li key={model.Model_ID} className="mb-2 p-2 bg-gray-800 rounded">{model.Model_Name}</li>
